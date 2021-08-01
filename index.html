@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<style type="text/css">
+		body
+		{
+			background-image: url("hh.png");
+			background-repeat: no-repeat;
+			background-color: #e1eafa;
+		
+		}
+		label
+		{
+			font-size: 25px;
+			font-weight: bolder;
+			color: black;
+		}
+		textarea
+		{
+			background-color: #e1eafa;
+		}
+		#one
+		{
+			margin-left: 450px;
+		}
+		#two
+		{
+			margin-left: 463px;
+		}
+		#btn
+		{
+			height: 40px;
+			width: 120px;
+			margin-left: 650px;
+			border-radius: 20px;
+			border-color: black;
+			font-size: 16px;
+			background: white;
+			font-weight: bold;
+		}
+	</style>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Rainforest Species Audio Detection</h1>
+
+     <!-- Main Input For Receiving Query to our Model -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<br><br>
+    <label for="Enter_index" id="one">Enter the index of the file</label>
+	<textarea name="Enter_index" rows="3" cols="30"></textarea>
+	<br><br>
+	<input type="submit" value="Submit" id="btn">
+    </form>
+
+
+ </div>
+
+
+</body>
+</html>
