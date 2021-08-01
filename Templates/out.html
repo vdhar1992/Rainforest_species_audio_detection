@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <style type="text/css">
+		body
+		{
+			background-color: #e1eafa;
+		}
+		table
+		{
+			margin-left: 480px;
+			margin-top: 90px;
+		}
+		table,th,td
+		{
+			background-image: url("hh.png");
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		table
+		{
+			width: 450px;
+			height: 500px;
+		}
+		#heading
+		{
+			font-size: 25px;
+			font-weight: bolder;
+			color: blue;
+		}
+		th,td
+		{
+			font-size: 18px;
+		}
+	</style>
+  
+</head>
+<body>
+	<table>
+		<tr>
+			<th colspan="2" id="heading">Predictions</th>
+		</tr>
+		<tr>
+			<th>Recording ID</th>
+			<td>{{Recording_id}}</td>
+		</tr>
+		<tr>
+			<th>Species Present</th>
+			<td>{{predicted}}</td>
+		</tr>
+		<tr>
+			<th>Time taken</th>
+			<td>{{time}}</td>
+		</tr>
+	</table>
+
+</body>
+</html>
